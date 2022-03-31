@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+.inputFrame {
+    @apply appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900
+}
+
+.inputFrame:focus {
+    @apply outline-none border-indigo-500 z-10 inline-block px-5 py-3 rounded-lg shadow-lg
+}
+
+.btn {}
+
+.btn:hover {}
+
+.btn:focus {}
+
+@tailwind utilities;
+@layer components {
+    .card {
+        background-color: theme('colors.blue.500');
+        border-radius: theme('borderRadius.lg');
+        padding: theme('spacing.6');
+        box-shadow: theme('boxShadow.xl');
+    }
+    /* ... */
+}

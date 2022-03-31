@@ -1,0 +1,59 @@
+<template>
+<div class="flex flex-row sm:mx-16 sm:my-20 sm:text-xl bg-indigo-300">
+    <div class="sm:basis-44 ">
+        <div class="grid grid-rows-3 sm:gap-6 gap-3">
+            <div class="row-span-2">
+                <img src="../assets/用户.svg" alt="" class="mt-2 h-8 sm:mt-4 sm:h-32 w-2/3 mx-auto">
+            </div>
+            <div class="sm:text-3xl text-center m-auto">{{nickname}}</div>
+            <div class="grid grid-rows-4 gap-16 bg-indigo-300">
+                <div class="bg-indigo-500 mx-2" @click="gotoFriends">
+                    <img src="../assets/好友.svg" alt="好友" class="h-16 m-auto">
+                    <p class="sm:text-3xl text-xl text-center mt-2">好友</p>
+                </div>
+                <div class="bg-indigo-500" @click="gotoGroups">
+                    <img src="../assets/群组.svg" alt="群组" class="h-16 m-auto">
+                    <p class="sm:text-3xl text-xl text-center mt-2">群组</p>
+                </div>
+                <div class="bg-indigo-500" @click="settings">
+                    <img src="../assets/设置.svg" alt="设置" class="h-16 m-auto"> 
+                    <p class="sm:text-3xl text-xl text-center mt-2">设置</p>
+                </div>
+                <div class="bg-indigo-500" @click="Logout">
+                    <img src="../assets/退出.svg" alt="退出" class="h-16 m-auto">
+                    <p class="sm:text-3xl text-xl text-center mt-2">退出登录</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="sm:basis-56 bg-red-300">
+      列表
+    </div>
+
+    <div class="sm:basis-auto bg-red-400">
+      聊天框
+    </div>
+</div>
+</template>
+
+<script setup>
+import {ref} from "vue"
+const nickname = ref('刘若晖')
+
+function settings(){
+    alert('你点击了设置')
+}
+
+function gotoFriends(){
+    alert('显示好友列表')
+}
+
+function gotoGroups(){
+    alert('显示群组列表')
+}
+
+function Logout(){
+    alert('退出登录!')
+}
+</script>

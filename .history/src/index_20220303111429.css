@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+.btn {
+    @apply inline-block px-5 py-3 rounded-lg shadow-lg
+}
+
+.btn:hover {
+    @apply bg-indigo-400
+}
+
+.btn:focus {
+    @apply outline-none ring-indigo-500 border-indigo-500 z-10
+}
+
+.btn:active {
+    @apply bg-indigo-600
+}
+
+@tailwind utilities;
+@layer components {
+    .card {
+        background-color: theme('colors.blue.500');
+        border-radius: theme('borderRadius.lg');
+        padding: theme('spacing.6');
+        box-shadow: theme('boxShadow.xl');
+    }
+    /* ... */
+}

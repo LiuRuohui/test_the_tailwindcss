@@ -1,0 +1,15 @@
+<script setup>
+//import WelcomingPage from "./components/WelcomingPage.vue"
+import RegisterPage from "./components/RegisterPage.vue"
+</script>
+
+<template>
+<!--<WelcomingPage class="bg-blue-50"></WelcomingPage> -->
+<RegisterPage class="bg-blue-50"></RegisterPage>
+</template>
+
+<style>
+#App {
+    height: 100vh;
+}
+</style>
